@@ -143,7 +143,7 @@ function appendItemsToEndorsmentContainer(currentObject) {
     let likesText = document.createElement("span");
     likesText.textContent = ' ' + likes;
     likeCount.appendChild(likesText);
-    endorseBottom.appendChild(likeCount);
+    endorseBottom.appendChild(likeCount); 
 
     endorseItem.appendChild(endorseBottom);
 
