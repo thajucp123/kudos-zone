@@ -5,6 +5,7 @@ const appSettings = {
     databaseURL: "https://kudoszone-fcac8-default-rtdb.asia-southeast1.firebasedatabase.app/"
 }
 
+
 const firebaseApp = initializeApp(appSettings);
 const database = getDatabase(firebaseApp);
 const endorseRef = ref(database,"endorsements"); //our database reference
@@ -36,6 +37,7 @@ const endorementText = document.getElementById("endorsement-text");
 const endorsementContainer = document.getElementById("endorsements-container");
 
 endorsementForm.addEventListener("submit",(e)=> {
+    if(!validateData(fromData,toData,endorementText)) return;
    e.preventDefault(); //prevents deafault submit behaviour
    const endorseObject = new Object();
    endorseObject.from = (fromData.value == null || fromData.value == '') ? "Unknown" : fromData.value;
@@ -185,4 +187,14 @@ function appendItemsToEndorsmentContainer(currentObject) {
         }
 
     })
+
+    
+}
+
+function validateData(fromData, toData, endorementText) {
+    if(fromData.value == "" || toData.value == "" || endorementText.value == ""){
+        alert("Please fill all the fields");
+        return false;
+    }
+    else return true;
 }
