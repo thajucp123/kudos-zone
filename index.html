@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>KudosZone</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="assets/kudos.png" class="logo">
+      <h1>KudosZone</h1>
+      <form id="endorsement-form">
+        <div class="inputFields">
+          <input type="text" id="from" placeholder="From" />
+          <input type="text" id="to" placeholder="To" />
+        </div>
+        <textarea
+          id="endorsement-text"
+          placeholder="Write endorsement text here.."
+        ></textarea>
+        <button id="submit-endorsement">Publish</button>
+      </form>
+      <h2>- Endrosements -</h2>
+      <div id="endorsements-container">
+        <!-- dummy text, will not be printed in output-->
+        <div class="endorse-item">
+          <div class="endorse-single-line endorse-top">
+            <p class="endorseTo">To Natasha</p>
+            <span class="deleteButton"><i class="fa fa-trash"></i></span>
+          </div>
+          <p class="endorse-body">
+            Hi Natasha, the work you did was very great. I loved it!!
+          </p>
+          <div class="endorse-single-line">
+            <span class="endorseFrom">From Bob</span>
+            <span class="likeCount"
+              ><i class="fa fa-heart"></i> <span>4</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- dummy text ends-->
+    </div>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

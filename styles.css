@@ -1,0 +1,151 @@
+html, body {
+    margin: 0;
+    padding: 0;
+        font-family: 'Inter', sans-serif;
+    background-color: #1B1924;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.logo {
+    max-width: 30%;
+    align-self: center;
+}
+
+h1, h2 {
+margin: 0;
+padding: 0;
+font-family: "Josefin Sans", sans-serif;
+text-align: center;
+}
+
+h2 {
+    margin: 20px 0px auto;
+}
+
+.endorsement-form {
+    width: 100%;
+    margin: 0;
+}
+
+textarea {
+ height: 108px;
+ width: 100%;
+ resize: initial;
+}
+
+.inputFields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+input, textarea {
+    color: #dbdbdb;
+    background-color: #444059;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align:center;
+    margin: 0px 8px 10px auto; 
+    display: block;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: #bababa;
+    font-size: 15px;
+  }
+
+button {
+    color: #04131C;
+    background-color: #28f1d3;
+    border: 0;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    font-weight: bold;
+    display: block;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #005a8a;
+    color: #fff;
+    cursor: pointer;
+}
+
+.endorse-item {
+    background-color: #fff;
+    color: #000;
+    border-radius: 4px;
+    width: 100%;
+    height: max-content;
+    padding: 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.endorseTo {
+    font-weight: bold;
+    display: block;
+}
+
+.endorse-body {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.endorse-single-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.endorse-top {
+    margin-top: 10px;
+}
+
+.endorseFrom {
+    font-weight: bold;
+    display: block;
+}
+
+.postTime {
+    font-size: 12px;
+    font-style: italic;
+    max-width: 80px;
+    text-wrap: wrap;
+    text-align: left;
+    color: #545454;
+}
+
+.likeCount {
+    font-weight: bold;
+    display: inline;
+}
+
+.fa-heart {
+  color: #913cff;
+}
+
