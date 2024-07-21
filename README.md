@@ -3,8 +3,9 @@
  - Just a simple javascript app that will add, delete data using firebase realtime database. <br/>
  - This app is for employees of a company to gve endorsement(or Kudos) to their collegues to appreciate their work and effort.
  - Used vanilla Javascript and regular CSS.
+ - Deployed on Vercel
 
-**Live Demo:** [addtocart-thaju.netlify.app/](https://addtocart-thaju.netlify.app/)
+**Live Demo:** [kudos-zone.vercel.app/](https://kudos-zone.vercel.app/)
 <br/>
 
 ## Usage:
